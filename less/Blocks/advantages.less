@@ -1,0 +1,118 @@
+.advantages{
+  &__wrapper{
+    .conteiner();
+    input{
+      display: none;
+    }
+  }
+  &__list{
+    min-height: 305px;
+  }
+  &__item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 105px;
+    padding-left: 40px;
+    padding-right: 40px;
+    &-title{
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p{
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+    }
+    &::after{
+      content: "";
+      display: block;
+      width: 95px;
+      height: 95px;
+      background:  url("../img/advantage-1-illustration.png") 0 0 no-repeat;
+      position: absolute;
+      top: 0;
+      left: 112px;
+    }
+  }
+  &__item:nth-child(n+2){
+    display: none;
+  }
+  &__toggles{
+    width:30px;
+    margin: 0 auto;
+    }
+}
+
+@media @tablet-widths {
+  .advantages{
+    &__item:nth-child(n+2){
+      display: block;
+    }
+    &__item{
+      border-bottom: 1px solid #4a4a4a;
+      width: 100%;
+      height: 180px;
+      padding: 0;
+      padding-left: 160px;
+      &:last-child{
+        border-bottom: none;
+      }
+      &::after{
+      left: 0;
+      top:25px;
+      }
+      &-title{
+        text-align: left;
+      }
+      p{
+        text-align: left;
+      }
+    }
+    &__toggles{
+      display: none;
+    }
+  }
+}
+@media @desktop-widths{
+  .advantages{
+    &__list{
+      display: table;
+      padding-top: 80px;
+    }
+    &__item{
+      display: table-cell;
+      width: 320px;
+      box-sizing: border-box;
+      border-bottom: none;
+      border-right: 1px solid #4a4a4a;
+      min-height: 395px;
+      padding: 0;
+      padding-top: 95px;
+      padding-left: 40px;
+      padding-right: 40px;
+      &-title{
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+      &::after{
+      left: 110px;
+      top:0px;
+      }
+    }
+    &__item:nth-child(n+2){
+      display: table-cell;
+    }
+    &__toggles{
+      display: none;
+    }
+  }
+}
