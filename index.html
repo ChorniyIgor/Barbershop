@@ -12,18 +12,16 @@
       <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
 
       <div class="page-header__logo ">
-        <img class="page-header__logo--mob" src="img/logo.png" alt="Барбершоп "Бородинский"" width="370" height="153">
-        <img class="page-header__logo--tablet" src="img/logo-tablet.png" alt="Барбершоп "Бородинский"" width="370" height="153">
-        <img class="page-header__logo--desktop" src="img/logo-desktop.png" alt="Барбершоп "Бородинский"" width="370" height="153">
+        <img class="page-header__logo--mob" src="img/logo.png" alt="Барбершоп "Бородинский"" width="226" height="30">
       </div>
 
-      <nav class="main-nav main-nav--closed">
-        <button clas="main-nav__toggle" type="button" >Открить меню</button>
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <button class="main-nav__toggle" type="button" >Открить меню</button>
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">Главная</li>
-            <li class="main-nav__item"><a href="">Наши работы</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item "><a href="">Наши работы</a></li>
             <li class="main-nav__item"><a href="">Записаться</a></li>
             <li class="main-nav__item"><a href="">Контакты</a></li>
             <li class="main-nav__item"><a href="">HTML Academy</a></li>
@@ -203,5 +201,25 @@
 
       </div>
     </footer>
+
+    <script>
+      var button=document.querySelector(".main-nav__toggle");
+      var nav=document.querySelector(".main-nav");
+
+      nav.classList.remove("main-nav--no-js");
+
+      button.addEventListener("click", function(){
+        if (nav.classList.contains("main-nav--closed")){
+          nav.classList.remove("main-nav--closed");
+          nav.classList.add("main-nav--opened");
+        }
+        else {
+          nav.classList.add("main-nav--closed");
+          nav.classList.remove("main-nav--opened");
+        }
+
+      });
+    </script>
+
   </body>
 </html>
