@@ -1,6 +1,7 @@
 @media @mobile-widths-only{
 .main-nav {
-  width: 320px;
+  // width: 320px;
+  width: auto;
   margin: 0 auto;
   min-height: 51px;
   &__list{
@@ -182,13 +183,17 @@
   }
 
   .main-nav {
-    .clearfix();
+  //  .clearfix();
     width:auto;
     background: #000000;
     &__list{
-      float: left;
-      width: 590px;
+  //    float: left;
+  //    width: 590px;
       font-size: 0px;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     .main-nav__user-login::before{
         content: "";
@@ -202,11 +207,13 @@
 
     }
     &__user-item{
-      float: right;
+  //    float: right;
       padding: 0;
       margin-top: 25px;
       position: relative;
-      width: 48px;
+      margin-left:40px;
+
+  //    width: 48px;
       height: 20px;
       li{
         list-style: none;
@@ -223,7 +230,10 @@
       }
     }
     &__wrapper{
-    .conteiner();
+    //.conteiner();
+    .conteiner-fluid();
+    display: flex;
+    justify-content: space-between;
     .clearfix();
   }
   &__item{
@@ -257,7 +267,7 @@
 @media @desktop-widths {
   .main-nav{
     &__list{
-      width:750px;
+    //  width:750px;
 
     }
     &__item{
@@ -267,7 +277,7 @@
       }
     }
     &__user-item{
-      width: 200px;
+    //  width: 200px;
       padding-right: 0;
       padding-left: 0;
       margin-top: 0;

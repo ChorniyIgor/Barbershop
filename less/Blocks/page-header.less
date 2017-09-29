@@ -26,15 +26,18 @@
 
 @media @tablet-widths {
   .page-header{
-    position: relative;
+   position: relative;
     min-height:70px;
-    padding-bottom: 400px;
+  //  padding-bottom: 400px;
+    display: flex;
+    flex-direction: column;
     .page-header__logo {
-      position: absolute;
-      bottom:0px;
+    //  position: absolute;
+    //  bottom:0px;
       height: 400px;
       margin: 0 auto;
       width:100%;
+      order:1;
     }
   }
   .page-header__logo {
@@ -46,6 +49,7 @@
       display: block;
     }
     background: #404040 url("../img/back-tablet.png") center no-repeat;
+    background-size: cover;
 
     &--tablet{
       position: relative;
@@ -60,7 +64,7 @@
 @media @desktop-widths {
   .page-header{
 
-    padding-bottom: 648px;
+  //  padding-bottom: 648px;
     bottom:0px;
     margin: 0 auto;
     width:100%;

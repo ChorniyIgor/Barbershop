@@ -1,8 +1,12 @@
+.e{
+  outline: 1px solid red;
+}
 .stats{
+  .conteiner-fluid();
 
   &__header{
     background: white;
-    .conteiner();
+
   }
   &__slogan{
     font-size: 30px;
@@ -30,7 +34,8 @@
   }
   &__list {
     border-collapse: collapse;
-    .conteiner();
+    width: 100%;
+
     td:first-child{
       font-size: 40px;
       line-height: 40px;
@@ -58,7 +63,9 @@
   }
   }
   &__legend--bottom{
-    .conteiner();
+
+    float: left;
+    clear: left;
     font-size: 20px;
     line-height: 27px;
     font-weight: 400;
@@ -80,38 +87,59 @@
       z-index: 1;
       padding: 40px;
       box-sizing: border-box;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-wrap: wrap;
     }
     &__slogan{
-      float: left;
-      width: 280px;
+    //  float: left;
+      width: 50%;
       padding: 0;
       margin: 0;
       margin-right: 30px;
       font-weight: 700;
+
     }
     &__intro{
-      float: right;
-      width: 210px;
+    //  float: right;
+      width: 37.5%;
       padding: 0;
       margin: 0;
+
     }
     &__legend--bottom{
       display: none;
+
     }
     &__legend--top{
       display: block;
       color:#cacaca;
       line-height: 27px;
       font-size: 20px;
-      float: left;
-      position: absolute;
-      bottom: 30px;
+      padding-top: 20px;
+      width: 50%;
+    //  float: left;
+    //  position: absolute;
+    //  bottom: 30px;
+
     }
 
     &__list{
+      width: 100%;
+      tbody{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+
+      }
       tr {
         display: inline-block;
         width: 50%;
+        flex-grow: 1;
+        box-sizing: border-box;
         min-height: 160px;
         .stats__value{
           font-size: 72px;
@@ -144,27 +172,39 @@
 
 @media @desktop-widths {
   .stats{
-    .conteiner();
+    display: flex;
     margin-top: -160px;
     &__header{
-      float: left;
+    //  float: left;
       width: 320px;
       min-height: 320px;
       box-sizing: border-box;
       margin-top: 0;
+      flex-direction: column;
+      align-items: stretch;
+      flex-grow: 1;
     }
     &__intro{
-      float: left;
+    //  float: left;
       padding-top: 50px;
+      width: 100%;
     }
     &__list{
-      float: right;
+  //    float: right;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
       width: 640px;
       min-height: 320px;
       box-sizing: border-box;
       position: relative;
       z-index: 1;
     }
-
+    .stats__slogan, .stats__legend {
+      width: 100%;
+    }
+    .stats__legend {
+      margin-top: auto;
+    }
   }
 }
