@@ -1,31 +1,27 @@
 {
-  "name": "pink",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
-    "autoprefixer": "6.7.x",
-    "grunt": "^1.0.1",
-    "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-less": "^1.4.1",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-postcss": "0.8.0"
-  },
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
   "scripts": {
-    "test": "editorconfig-cli",
-    "build": "grunt less && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "less/**/*.less"
-  ],
-  "engines": {
-    "node": "6.10"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0"
   }
 }
