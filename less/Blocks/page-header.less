@@ -4,12 +4,6 @@
 
 .page-header{
   &__logo{
-    &--tablet{
-      display: none;
-    }
-    &--desktop{
-      display: none;
-    }
 
     margin: 0 auto;
     width: 226px;
@@ -42,24 +36,19 @@
   }
   .page-header__logo {
     .conteiner();
-    &--mob{
-      display: none;
-    }
-    &--tablet{
-      display: block;
-    }
     background: #404040 url("../img/back-tablet.png") center no-repeat;
     background-size: cover;
 
-    &--tablet{
-      position: relative;
-      top: 40px;
-      left: 50%;
-      margin-left: -185px;
+  picture{
+    img{
+      margin: 0 auto;
+      display: block;
+      width: 380px;
     }
+    }
+  }
 
   }
-}
 
 @media @desktop-widths {
   .page-header{
@@ -74,18 +63,10 @@
     height: 648px;
     background: #404040 url("../img/back-desktop.png") center top no-repeat;
     background-size: 100%;
-    &--tablet{
-      display: none;
-    }
-    &--desktop{
-      display: block;
-      position: relative;
-      top: 50px;
-      left: 50%;
-      margin-left: -185px
-    }
-
-
-
+    picture{
+      img{
+        padding-top: 60px;
+      }
   }
+}
 }

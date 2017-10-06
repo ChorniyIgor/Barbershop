@@ -1,4 +1,16 @@
-
+.reviews__list [type="radio"] + blockquote{
+  display: none;
+}
+.reviews__list [type="radio"]:checked + blockquote{
+  display: block;
+}
+.slider__toggle{
+  font-size: 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background:  url(../img/icons/checkblack.png) center no-repeat;
+}
 .reviews{
   background: #f8f5f2;
   color:black;
@@ -26,9 +38,7 @@
   [type="radio"]{
     display: none;
   }
-  &__list .reviews__item:nth-child(n+2){
-    display: none;
-  }
+
   &__write{
     display: none;
   }
@@ -49,6 +59,17 @@
       }
     }
   }
+  &__toggles{
+    width:94px;
+    margin: 0 auto;
+    .slider__toggle{
+      margin-right: 28px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    }
+
 }
 .reviews__author-foto img{
   width: 50px;
@@ -64,6 +85,9 @@
     display: none;
   }
 @media @tablet-widths {
+.reviews__toggles{
+  display: none;
+}
 .reviews .reviews__item  p{
     margin-left: 140px;
   }
@@ -155,19 +179,35 @@
 
 @media @desktop-widths{
   .reviews{
-    &__list{
-      margin-top: 45px;
-    }
-    &__item{
-      margin-left: 25px;
-      margin-right: 25px;
-      border: 1px solid #e5ddd5;
-    }
     &__wrapper{
          width: 84%;
          max-width: 968px;
          margin: 0 auto;
+
       }
+    &__item{
+      margin-left: 25px;
+      margin-right: 25px;
+      border: 1px solid #e5ddd5;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    &__list{
+      margin-top: 45px;
+
+    .reviews__author-foto{
+      width: 260px;
+      height: 160px;
+      margin-left: 0;
+      picture{
+        img{
+          display: block;
+          border-radius: none;
+          }
+        }
+      }
+
+
     &__write{
       margin-right: 0;
     }
@@ -175,4 +215,18 @@
       margin-left: 70px;
     }
     }
+}
+.reviews .reviews__list .reviews__item .reviews__author-foto{
+  width: 260px;
+  height: 160px;
+  img{
+    width: 260px;
+    height: 160px;
+    border-radius: 0px;
+  }
+}
+.reviews .reviews__list .reviews__item .reviews__author-name{
+  padding-top: 30px;
+  display: block;
+}
 }
