@@ -1,0 +1,80 @@
+.our-work{
+  background: white;
+  color: black;
+  &::after{
+    content: "";
+    display: block;
+    background: url(../img/reviews__bott.png) center bottom no-repeat;
+    width: 100%;
+    min-height: 10vh;
+    background-size: cover;
+  }
+}
+.our-work__title{
+  margin-top: 0;
+  color:black;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.our-work__conteiner{
+  .conteiner-fluid();
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.our-work__item{
+  border: 1px solid #e5ddd5;
+  margin-bottom: 20px;
+  .item-photo{
+    width: 100%;
+    background: #dab9ac;
+    position: relative;
+          img{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+          }
+  }
+}
+
+.our-work__item--top{
+    .item-photo::after{
+        content: "Работа месяца";
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 700;
+        padding-top: 11px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        display: block;
+        width: 180px;
+        height: 50px;
+        background: url(../img/work-top.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 400px;
+        color: white;
+    }
+
+}
+
+.item__user-name{
+  font-size:24px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.item__descr{
+  font-size:18px;
+  line-height: 27px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: block;
+  margin-left: 20px;
+  margin-right: 25px;
+}
