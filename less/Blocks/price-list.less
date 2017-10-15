@@ -1,6 +1,14 @@
 .price-list{
   color:white;
-
+  background: #353535;
+  &::after{
+    content:"";
+    display:block;
+    background: url(../img/reviews__bott.png) center bottom no-repeat;
+    width: 100%;
+    min-height: 10vh;
+    background-size: cover;
+  }
 }
 .price-list__title{
   font-size: 30px;
@@ -8,13 +16,14 @@
   font-weight: 700;
   display: block;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 34px;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 .price-list__table{
   display: block;
   margin-right: 20px;
   margin-left: 20px;
-  .r();
   tbody{
     display: block;
     width: 100%;
@@ -24,7 +33,6 @@
     display: block;
     margin-bottom: 15px;
     position: relative;
-    .r();
     .clearfix();
   }
   td{
@@ -45,10 +53,8 @@
   .table-row__charac{
     position: absolute;
     bottom: 0;
+
   }
-
-
-
   .table-row__number{
     font-size: 20px;
     line-height: 20px;
@@ -68,6 +74,11 @@
     line-height: 27px;
     font-weight: 400;
     color: #ffffff;
+    b{
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 400;
+    }
   }
 
   .table-row__price{
@@ -76,5 +87,182 @@
     font-weight: 400;
     color: #ffffff;
   }
+}
 
+.time-table__wrapper{
+  border: 1px solid #484848;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.time-table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  .clearfix();
+}
+
+.time-table__img{
+  width: 58px;
+  height: 58px;
+  float: left;
+  margin-top: 16px;
+  margin-left: 5%;
+}
+.time-table__info{
+  font-size: 20px;
+  line-height:27px;
+  float: right;
+  width: 50%;
+}
+
+@media @tablet-widths {
+  .price-list{
+    padding-bottom: 30px;
+    &::after{
+      display:none;
+    }
+  }
+  .price-list__title{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 5%;
+    padding-top: 34px;
+    margin-top: 0;
+  }
+
+  .price-list__table{
+    display: table;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    tbody{
+      display: table-row-group;
+      width: 60px;
+      margin-right: 20px;
+
+    }
+    tr{
+      display: table-row;
+      margin-bottom: 0px;
+      .clearfix();
+    }
+    td{
+      border: 1px solid #4a4a4a;
+      display:table-cell;
+    }
+    .table-tow__title{
+        float: none;
+        width: 39%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 19px;
+        box-sizing: border-box;
+
+    }
+    .table-row__price{
+        float: none;
+        width: 24.75%;
+        min-height: 56px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 19px;
+    }
+    .table-row__charac{
+        position: static;
+        width: 25%;
+        position: static;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 19px;
+
+    }
+    .table-row__number{
+        width: 11.25%;
+        display: table-cell;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+
+    .table-row__charac{
+      b{
+        display: none;
+      }
+    }
+  }
+  .time-table__wrapper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .time-table{
+    width: 580px;
+
+  }
+  .time-table__img{
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .time-table__info{
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 70%;
+    float: left;
+    margin-left: 90px;
+    br{
+      display: none;
+    }
+  }
+}
+
+@media @desktop-widths{
+  .price-list__title{
+    .conteiner-fluid();
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .price-list__content{
+    display: flex;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .price-list__table{
+    width: 640px;
+  }
+  .time-table{
+    width: 269px;
+  }
+  .time-table__wrapper{
+    width: 269px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .time-table__img {
+    float: none;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .time-table__info{
+    width: 100%;
+    text-align: center;
+    float: none;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: none;
+    margin: 0;
+    br{
+      display: block;
+    }
+  }
 }

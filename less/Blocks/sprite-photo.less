@@ -1,0 +1,116 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-clock {
+    width: 58px;
+    height: 57px;
+    background-position: -10px -10px;
+}
+
+.sprite-clock--tab {
+    width: 72px;
+    height: 71px;
+    background-position: -88px -10px;
+}
+
+.sprite-clock-desc {
+    width: 142px;
+    height: 139px;
+    background-position: -180px -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sprite-photo{
+  display: inline-block;
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 27px;
+  font-style: normal;
+}
+.haircut{
+  margin-left: 20px;
+  padding-left: 40px;
+}
+.shaving{
+  margin-left: 22px;
+  padding-left: 48px;
+}
+.mustache{
+  margin-left: 10px;
+  padding-left: 60px;
+}
+.sprite-photo::before {
+    content:"";
+    background-image: url(../img/sprite-photo.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+.clock {
+    background-image: url(../img/sprite-photo.png);
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 57px;
+    background-position: -10px -10px;
+}
+@media @tablet-widths {
+  .clock {
+      width: 72px;
+      height: 71px;
+      background-position: -88px -10px;
+  }
+}
+@media @desktop-widths{
+  .clock {
+    width: 142px;
+    height: 139px;
+    background-position: -180px -10px;
+  }
+}
+
+
+
+.haircut::before {
+    width: 21px;
+    height: 20px;
+    background-position: -342px -10px;
+}
+
+.mustache::before {
+    width: 45px;
+    height: 12px;
+    background-position: -383px -10px;
+}
+
+.shaving::before {
+    width: 23px;
+    height: 21px;
+    background-position: -448px -10px;
+}

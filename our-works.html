@@ -45,7 +45,10 @@
 
     <main class="page-main">
         <section class="our-work">
-          <h1 class="our-work__title">Наши работы</h1>
+          <div class="our-work__head">
+            <h1 class="our-work__title">Наши работы</h1>
+            <a href="../" class="btn our-work__btn">На главную</a>
+          </div>
           <div class="our-work__conteiner">
               <div class="our-work__item our-work__item--top">
                 <div class="item-photo">
@@ -62,16 +65,18 @@
                   </picture>
                 </div>
 
+              <div class="item-info">
                 <span class="item__user-name">Лжепётр Мчиславский</span>
                 <p class="item__descr">Где я только ни стригся,
                    но так как делаете это вы — не умеет никто другой!
                    Еще раз спасибо и до скорого!</p>
                 <div class="item__descr-list">
-                  <i class="haircut"></i>
-                  <i class="shaving"></i>
-                  <i class="mustache"></i>
+                  <i class="haircut sprite-photo">Стрижка</i>
+                  <i class="shaving sprite-photo">Бритье</i>
+                  <i class="mustache sprite-photo">Усы</i>
                 </div>
               </div>
+            </div>
 
               <div class="our-work__item">
                 <div class="item-photo">
@@ -88,15 +93,15 @@
                   </picture>
                 </div>
 
+              <div class="item-info">
                 <span class="item__user-name">Саша Мальцев</span>
                 <p class="item__descr">Попросил омолодить и омолодили!
                    Кто теперь скажет, что мне 45?</p>
                 <div class="item__descr-list">
-                  <i class="haircut"></i>
-                  <i class="shaving"></i>
-                  <i class="mustache"></i>
+                  <i class="haircut sprite-photo">Стрижка</i>
                 </div>
               </div>
+            </div>
 
               <div class="our-work__item">
                 <div class="item-photo">
@@ -113,14 +118,15 @@
                   </picture>
                 </div>
 
+              <div class="item-info">
                 <span class="item__user-name">Владимир Иваныч</span>
                 <p class="item__descr">К зимнему сезону — готов!</p>
                 <div class="item__descr-list">
-                  <i class="haircut"></i>
-                  <i class="shaving"></i>
-                  <i class="mustache"></i>
+                  <i class="shaving sprite-photo">Борода</i>
+                  <i class="mustache sprite-photo">Усы</i>
                 </div>
               </div>
+            </div>
 
               <div class="our-work__item">
                 <div class="item-photo">
@@ -137,53 +143,64 @@
                   </picture>
                 </div>
 
+              <div class="item-info">
                 <span class="item__user-name">Винстон Синий</span>
                 <p class="item__descr">Как только заростаю
                   и волосы начинают мешать видеть — бегом в Бородинский!</p>
                 <div class="item__descr-list">
-                  <i class="haircut"></i>
-                  <i class="shaving"></i>
-                  <i class="mustache"></i>
+                  <i class="haircut sprite-photo">Срижка</i>
                 </div>
               </div>
+            </div>
         </section>
 
 
         <section class="price-list">
           <h1 class="price-list__title">Прейскурант</h1>
-            <table class="price-list__table">
-              <tr>
-                <td class="table-row__number">1</td>
-                <td class="table-tow__title">Классическая стрижка</td>
-                <td class="table-row__charac">с мытьём головы</td>
-                <td class="table-row__price">1 500 руб.</td>
-              </tr>
-              <tr>
-                <td class="table-row__number">2</td>
-                <td class="table-tow__title">Современный вариант</td>
-                <td class="table-row__charac">с мытьём головы</td>
-                <td class="table-row__price">1 500 руб.</td>
-              </tr>
-              <tr>
-                <td class="table-row__number">3</td>
-                <td class="table-tow__title">Индивидуальный подход</td>
-                <td class="table-row__charac">с мытьём головы</td>
-                <td class="table-row__price">2 000 руб.</td>
-              </tr>
-              <tr>
-                <td class="table-row__number">4</td>
-                <td class="table-tow__title">Бритьё бороды</td>
-                <td class="table-row__charac">без мытья</td>
-                <td class="table-row__price">500 руб.</td>
-              </tr>
-              <tr>
-                <td class="table-row__number">5</td>
-                <td class="table-tow__title">Бритьё головы</td>
-                <td class="table-row__charac">с мытьём головы</td>
-                <td class="table-row__price">1 000 руб.</td>
-              </tr>
-            </table>
+            <div class="price-list__content">
+              <table class="price-list__table">
+                <tr>
+                  <td class="table-row__number">1</td>
+                  <td class="table-tow__title">Классическая стрижка</td>
+                  <td class="table-row__charac"><b>(</b>с мытьём головы<b>)</b></td>
+                  <td class="table-row__price">1 500 руб.</td>
+                </tr>
+                <tr>
+                  <td class="table-row__number">2</td>
+                  <td class="table-tow__title">Современный вариант</td>
+                  <td class="table-row__charac"><b>(</b>с мытьём головы<b>)</b></td>
+                  <td class="table-row__price">1 500 руб.</td>
+                </tr>
+                <tr>
+                  <td class="table-row__number">3</td>
+                  <td class="table-tow__title">Индивидуальный подход</td>
+                  <td class="table-row__charac"><b>(</b>с мытьём головы<b>)</b></td>
+                  <td class="table-row__price">2 000 руб.</td>
+                </tr>
+                <tr>
+                  <td class="table-row__number">4</td>
+                  <td class="table-tow__title">Бритьё бороды</td>
+                  <td class="table-row__charac"><b>(</b>без мытья<b>)</b></td>
+                  <td class="table-row__price">500 руб.</td>
+                </tr>
+                <tr>
+                  <td class="table-row__number">5</td>
+                  <td class="table-tow__title">Бритьё головы</td>
+                  <td class="table-row__charac"><b>(</b>с мытьём головы<b>)</b></td>
+                  <td class="table-row__price">1 000 руб.</td>
+                </tr>
+              </table>
+
+            <div class="time-table__wrapper">
+              <div class="time-table">
+                <div class="time-table__img clock"></div>
+                <p class="time-table__info">C 10:00 до 14:00 <br>
+                    скидка 20%</p>
+              </div>
+            </div>
+        </div>
         </section>
+
 
     </main>
 

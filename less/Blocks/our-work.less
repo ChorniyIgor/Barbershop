@@ -1,10 +1,10 @@
 .our-work{
-  background: white;
+  background: #f8f5f2;
   color: black;
   &::after{
     content: "";
     display: block;
-    background: url(../img/reviews__bott.png) center bottom no-repeat;
+    background: url(../img/reviews__bottV2.png) center bottom no-repeat;
     width: 100%;
     min-height: 10vh;
     background-size: cover;
@@ -16,6 +16,12 @@
   text-align: center;
   padding-top: 30px;
   margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 0;
+}
+.our-work__btn{
+  display: none;
 }
 .our-work__conteiner{
   .conteiner-fluid();
@@ -73,8 +79,203 @@
   font-size:18px;
   line-height: 27px;
   margin-top: 20px;
-  margin-left: 20px;
   display: block;
   margin-left: 20px;
   margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+
+
+@media @tablet-widths {
+  .our-work{
+    &::after{
+      background: url(../img/reviews__bottV2--tab.png) center bottom no-repeat;
+      width: 100%;
+      min-height: 9vh;
+      background-size: cover;
+    }
+  }
+  .our-work__head{
+    .conteiner-fluid();
+    position: relative;
+  }
+  .our-work__title{
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    color:black;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .our-work__btn{
+    color:black;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #e5ddd5;
+    width: 21%;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 27px;
+  }
+  .our-work__conteiner{
+    .conteiner-fluid();
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .our-work__item{
+    border: 1px solid #e5ddd5;
+    margin-bottom: 20px;
+    position: relative;
+    .clearfix();
+    .item-photo{
+      float: left;
+      width: auto;
+      height: auto;
+      img{
+        width: 270px;
+        display: block;
+      }
+            }
+    .item-info{
+      float: left;
+      width: 50%;
+    }
+    }
+    .our-work__item--top{
+        .item-photo::after{
+          top: 36px;
+        }
+      }
+      .item__user-name{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 33px;
+      }
+
+      .item__descr{
+
+        display: block;
+        margin-left: 50px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+      }
+    .item__descr-list{
+      position: absolute;
+      bottom: 20px;
+      width: 40%;
+      left: 300px;
+    }
+}
+@media @desktop-widths{
+  .our-work{
+    padding-bottom: 80px;
+    &::after{
+      display: none;
+    }
+  }
+
+  .our-work__item{
+    width: 295px;
+    .clearfix();
+    .item-photo{
+      float: left;
+      width: auto;
+      height: auto;
+      img{
+        width: 295px;
+        display: block;
+      }
+            }
+    .item-info{
+      float: left;
+      width: 50%;
+    }
+    .item__user-name{
+      margin-top: 34px;
+      margin-bottom: 0px;
+      margin-left: 35px;
+      width: 200px;
+    }
+    .item__descr{
+      margin-top: 25px;
+      margin-left: 35px;
+      width: 240px;
+      padding-bottom: 85px;
+    }
+    .item__descr-list{
+      bottom: 15px;
+      left:6px;
+      width: 100%;
+    }
+    }
+
+
+    .our-work__item--top{
+
+
+    }
+
+
+
+  .our-work__item--top{
+    width: 100%;
+    margin-bottom: 45px;
+
+    .item-photo::after{
+        background: url(../img/work-top--desk.png) no-repeat;
+        top: 24px;
+        left: 762px;
+        color: white;
+    }
+    .clearfix();
+    .item-photo{
+      float: left;
+      width: auto;
+      height: auto;
+      img{
+        width: 480px;
+        display: block;
+      }
+    }
+    .item-info{
+      float: left;
+      width: 37%;
+    }
+
+    .item__user-name{
+      margin-top: 130px;
+    }
+    .item__descr-list{
+      left: 500px;
+    }
+  }
+
+
+  .our-work__conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 }
