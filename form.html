@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header page-header--min">
+
+      <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
+
+      <div class="page-header__logo ">
+        <picture>
+          <source media="(min-width: 1200px)"
+                   srcset="img/logo-desktop.png">
+          <source media="(min-width:768px)"
+                   srcset="img/logo-tablet.png">
+          <img src="img/logo.png" alt="Барбершоп "Бородинский"" width="226" height="30">
+        </picture>
+
+      </div>
+
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <button class="main-nav__toggle" type="button" >Открить меню</button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="../">Главная</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a href="our-works.html">Работы</a></li>
+            <li class="main-nav__item"><a>Записаться</a></li>
+            <li class="main-nav__item"><a href="">Контакты</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+
+          <ul class="main-nav__user-item">
+            <li><a href="" class="main-nav__user-login" title="Войти">Вход</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+
+    <main class="page-main">
+      <div class="form_wrapper">
+        <div class="form">
+          <h1 class="form__title">Запись на стрижку</h1>
+          <a href="../" class="btn form__title__btn">На главную</a>
+          <form class="user-form" action="form/mail.php" method="POST">
+            <div class="user-form__info">
+              <div class="form-wrapper">
+              <label>
+                Фамилия
+              <input type="text" name="last_name" placeholder="Фамилия">
+              </label>
+              <label>
+               Имя
+              <input type="text" name="first_name" placeholder="Имя">
+              </label>
+              <label>
+               Отчество
+              <input type="text" name="middle_name" placeholder="Отчество">
+              </label>
+              </div>
+              <label>
+               <i>Контактный телефон</i>
+              <input type="tel" name="user_tel" placeholder="Контактный телефон">
+              </label>
+              <label>
+               <i>Контактный e-mail</i>
+              <input type="email" name="user_email" placeholder="Контактный e-mail">
+              </label>
+              <label>
+               <i>Доп. информация для мастера</i>
+              <textarea name="additional_inf" rows="8" cols="20" placeholder="Доп. информация для мастера"></textarea>
+              </label>
+            </div>
+              <div class="h2-custom">
+                <h2 class="beard_shape__title">Выберите модель бороды:</h2>
+              </div>
+            <div class="beard_shape">
+              <label>
+              <input type="radio" name="beard_type" value="адмирал" checked>
+              <span>адмирал</span>
+              </label>
+              <label>
+              <input type="radio" name="beard_type" value="лесоруб">
+              <span>лесоруб</span>
+              </label>
+              <label>
+              <input type="radio" name="beard_type" value="полярник">
+              <span>полярник</span>
+              </label>
+              <label>
+              <input type="radio" name="beard_type" value="боярин">
+              <span>боярин</span>
+              </label>
+              <label>
+              <input type="radio" name="beard_type" value="мудрец">
+              <span>мудрец</span>
+              </label>
+            </div>
+            <div class="h2-custom">
+              <h2 class="additional_services__title">Дополнительные услуги:</h2>
+            </div>
+              <div class="additional_services">
+                  <label>
+                    <input type="checkbox" name="additional_servic" value="Подкрасить бороду" checked>
+                    <span>Подкрасить бороду</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="additional_servic" value="Накрутить усы">
+                    <span>Накрутить усы</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="additional_servic" value="Причесать бороду">
+                    <span>Причесать бороду</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="additional_servic" value="Подровнять виски">
+                    <span>Подровнять виски</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="additional_servic" value="Убрать седину">
+                    <span>Убрать седину</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="additional_servic" value="Отполировать лысину">
+                    <span>Отполировать лысину</span>
+                  </label>
+              </div>
+              <button type="submit" class="btn user-form__btn" name="form_send">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="footer_wrapper">
+
+        <p class="page-footer__contacts">
+          <b>Барбершоп "Бородинский"</b>
+          г. Санк-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>
+          +7 (812) 555-66-66</a>
+        </p>
+
+        <div class="page-footer__social">
+          <b>Давайте дружить!</b>
+          <span class="social-links">
+            <a href="" class="social-link social-link--vk">Мы в Вконтакте</a>
+            <a href="" class="social-link social-link--fb">Мы в Фейсбуке</a>
+            <a href="" class="social-link social-link--inst">Мы в Инстаграме</a>
+          </span>
+        </div>
+
+        <p class="page-footer__copyright">
+          Разработано:
+          <a href="" class="btn page-footer__copiright-link">HTML Academy</a>
+        </p>
+
+      </div>
+    </footer>
+
+    <script>
+      var button=document.querySelector(".main-nav__toggle");
+      var nav=document.querySelector(".main-nav");
+
+      nav.classList.remove("main-nav--no-js");
+
+      button.addEventListener("click", function(){
+        if (nav.classList.contains("main-nav--closed")){
+          nav.classList.remove("main-nav--closed");
+          nav.classList.add("main-nav--opened");
+        }
+        else {
+          nav.classList.add("main-nav--closed");
+          nav.classList.remove("main-nav--opened");
+        }
+
+      });
+    </script>
+
+  </body>
+</html>

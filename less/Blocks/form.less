@@ -1,0 +1,442 @@
+.form_wrapper{
+  background: #f8f5f2;
+  color: black;
+  &::after{
+    content:"";
+    display:block;
+    background: url(../img/reviews__bott.png) center bottom no-repeat;
+    width: 100%;
+    min-height: 10vh;
+    background-size: cover;
+  }
+}
+.form__title__btn{
+  display: none;
+}
+.form{
+  .conteiner-fluid();
+  margin-left: auto;
+  margin-right: auto;
+}
+.user-form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.user-form i{
+  font-size: 0;
+  line-height: 0;
+
+}
+.form__title{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.user-form .user-form__info label{
+  height: 50px;
+  font-size: 0px;
+}
+.user-form input[type="text"],
+.user-form input[type="tel"],
+.user-form input[type="email"],
+.user-form textarea{
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #e5ddd5;
+  outline: none;
+  margin-bottom: 6px;
+}
+.user-form input[name="middle_name"]{
+  margin-bottom: 32px;
+}
+.user-form input[name="user_email"]{
+  margin-bottom: 32px;
+}
+.user-form textarea{
+  height: 112px;
+  padding-top: 10px;
+  resize: none;
+}
+::-webkit-input-placeholder {color:black;}
+::-moz-placeholder          {color:black;}/* Firefox 19+ */
+:-moz-placeholder           {color:black;}/* Firefox 18- */
+:-ms-input-placeholder      {color:black;}
+
+.beard_shape__title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.beard_shape{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.beard_shape label [type="radio"]{
+  display: none;
+}
+.beard_shape label{
+  box-sizing: border-box;
+  padding-bottom: 120px;
+  padding-top: 68px;
+  display: block;
+  width: 33.2%;
+  position: relative;
+}
+.beard_shape label span{
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  &::before{
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    background: #ffffff;
+    border:1px solid #e5ddd5;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-26px);
+  }
+}
+.beard_shape label [type="radio"]:checked + span{
+  &::after{
+    content: "";
+    display: block;
+    background: green;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border:1px solid #e5ddd5;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-9px);
+  }
+}
+.beard_shape label{
+  &::before{
+    content: "";
+    display: block;
+    background-image: url(../img/beard-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top:100px;
+    left: 50%;
+  }
+}
+
+.beard_shape label:nth-child(1){
+  &::before{
+    width: 52px;
+    height: 49px;
+    background-position: -10px -10px;
+    transform: translateX(-26px);
+  }
+}
+.beard_shape label:nth-child(2){
+  &::before{
+    width: 58px;
+    height: 68px;
+    background-position: -82px -10px;
+    transform: translateX(-29px);
+  }
+}
+.beard_shape label:nth-child(3){
+  &::before{
+    width: 64px;
+    height: 78px;
+    background-position: -160px -10px;
+    transform: translateX(-32px);
+  }
+}
+.beard_shape label:nth-child(4){
+  &::before{
+    width: 58px;
+    height: 98px;
+    background-position: -244px -10px;
+    transform: translateX(-29px);
+  }
+}
+.beard_shape label:nth-child(5){
+  &::before{
+    width: 46px;
+    height: 105px;
+    background-position: -322px -10px;
+    transform: translateX(-23px);
+  }
+}
+.additional_services__title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.additional_services{
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+.additional_services [type="checkbox"]{
+  display: none;
+}
+.additional_services label{
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 60px;
+  position: relative;
+}
+.additional_services span{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  &::before{
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e5ddd5;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+}
+.additional_services [type="checkbox"]:checked + span{
+    &::after{
+      content: "";
+      display: block;
+      background-image: url(../img/beard-sprite.png);
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 16px;
+      background-position: -388px -10px;
+      position: absolute;
+      left: 7px;
+      top: 20px;
+    }
+}
+.user-form__btn{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  background-color: #826550;
+  border-radius: none;
+  margin-bottom: 50px;
+}
+
+
+
+@media @tablet-widths {
+  .h2-custom{
+    position: relative;
+    text-align: center;
+  }
+  .h2-custom::after{
+    width: auto;
+    content: "";
+    height: 2px;
+    background: #e5ddd5;
+    display: block;
+    position: relative;
+    bottom:65px;
+    z-index: 1;
+  }
+  .h2-custom h2{
+    padding: 0 25px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: #f8f5f2;
+  }
+  .form__title__btn{
+    display: block;
+  }
+  .form_wrapper{
+    &::after{
+      display:none;
+    }
+  }
+  .form{
+    position: relative;
+  }
+  .form__title{
+    text-align: left;
+  }
+  .form__title__btn{
+    color:black;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #e5ddd5;
+    width: 21%;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 27px;
+  }
+  .user-form{
+    width: 100%;
+  }
+.form-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 35px;
+    height: 70px;
+
+  }
+.user-form .user-form__info label{
+  margin: 0;
+  font-size: 0px;
+}
+.user-form .user-form__info input{
+  height: 70px;
+  font-size: 24px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding-left: 25px;
+}
+.user-form .user-form__info [type="tel"],
+.user-form .user-form__info [type="email"]{
+  margin-bottom: 35px;
+}
+.user-form .user-form__info textarea{
+  height: 210px;
+  font-size: 24px;
+  padding-left: 25px;
+  padding-top: 25px;
+  margin-bottom: 0;
+}
+.beard_shape__title{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.beard_shape{
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.additional_services__title{
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.additional_services{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.additional_services label{
+  width: 50%;
+  box-sizing: border-box;
+  span{
+    font-size: 24px;
+  }
+  &:nth-child(1){
+    order:-6;
+  }
+  &:nth-child(3){
+    order:-5;
+  }
+  &:nth-child(5){
+    order:-4;
+  }
+}
+.user-form__btn{
+  font-size: 24px;
+  height: 70px;
+  margin-bottom: 75px;
+}
+}
+@media @desktop-widths{
+    .form__title{
+      font-size: 40px;
+      line-height: 40px;
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+    .form__title__btn{
+      top: 60px;
+    }
+    .form-wrapper{
+      justify-content: space-between;
+    }
+    .form-wrapper label{
+      width: 30%;
+    }
+    .beard_shape__title,
+    .additional_services__title{
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    .additional_services{
+      margin-bottom: 70px;
+    }
+    .additional_services label{
+      width: 33%;
+    }
+    .user-form__btn{
+      margin-bottom: 90px;
+    }
+    .h2-custom::after{
+      bottom:65px;
+    }
+    .h2-custom h2{
+      padding: 0 40px;
+    }
+
+
+
+
+
+
+
+
+
+}
